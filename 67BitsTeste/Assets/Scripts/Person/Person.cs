@@ -35,8 +35,6 @@ public class Person : MonoBehaviour
         {
             rb.isKinematic = false;
         }
-
-        Destroy(this.gameObject,5);
     }
 
     public void Hit(Transform target)
@@ -47,13 +45,19 @@ public class Person : MonoBehaviour
 
     IEnumerator ActionHit(Transform target)
     {   
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.4f);
         
         EnableRagdoll();
 
         Vector3 direction = (transform.position - target.position).normalized;
         forceRB.AddForce(direction * forceMagnitude);
     }
+
+    IEnumerator OnBag(Transform target)
+    {
+        yield return new WaitForSeconds(3f);
+    }
+
 
 
 }

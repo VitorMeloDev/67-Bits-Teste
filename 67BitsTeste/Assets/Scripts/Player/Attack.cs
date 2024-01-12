@@ -12,19 +12,16 @@ public class Attack : MonoBehaviour
         components = GetComponent<Components>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter(Collider other) 
     {
         if(other.gameObject.CompareTag("Person"))
         {
-            components.anim.Play("Cross Punch");
-            other.GetComponent<Person>().Hit(transform);
+            if(GameManager.instance.personOnBag < GameManager.instance.limitPersonOnBag)
+            {
+                components.anim.Play("Cross Punch");
+                GameManager.instance.personOnBag += 1;
+                other.GetComponent<Person>().Hit(transform);
+            }
         }
-
     }
 }

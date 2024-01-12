@@ -39,4 +39,20 @@ public class Move : MonoBehaviour
 
         transform.Translate(direction * (speedMove * Time.deltaTime), Space.World);
     }
+
+    private void OnTriggerEnter(Collider other) 
+    {
+        if(other.gameObject.CompareTag("DropArea"))
+        {
+            GameManager.instance.dropBtn.SetActive(true);
+        }
+    }
+
+    public void OnTriggerExit(Collider col)
+    {
+        if(col.gameObject.CompareTag("DropArea"))
+        {
+            GameManager.instance.dropBtn.SetActive(false);
+        }
+    }
 }
