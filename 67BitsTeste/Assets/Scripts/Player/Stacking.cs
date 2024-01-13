@@ -22,7 +22,7 @@ public class Stacking : MonoBehaviour
 
     public IEnumerator OnTheBack(GameObject other)
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2.5f);
         
         if(list.Count == 1)
         {

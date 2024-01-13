@@ -1,0 +1,5 @@
+E:/Usuarios/Percival/Documents/Meus jogos/Autorais/Arquivos dos jogos/67Bits/67-Bits-Teste/67BitsTeste/.utmp/RelWithDebInfo/125a6m49/arm64-v8a/CMakeFiles/edit_cache.dir
+E:/Usuarios/Percival/Documents/Meus jogos/Autorais/Arquivos dos jogos/67Bits/67-Bits-Teste/67BitsTeste/.utmp/RelWithDebInfo/125a6m49/arm64-v8a/CMakeFiles/rebuild_cache.dir
+E:/Usuarios/Percival/Documents/Meus jogos/Autorais/Arquivos dos jogos/67Bits/67-Bits-Teste/67BitsTeste/.utmp/RelWithDebInfo/125a6m49/arm64-v8a/FramePacing/CMakeFiles/swappywrapper.dir
+E:/Usuarios/Percival/Documents/Meus jogos/Autorais/Arquivos dos jogos/67Bits/67-Bits-Teste/67BitsTeste/.utmp/RelWithDebInfo/125a6m49/arm64-v8a/FramePacing/CMakeFiles/edit_cache.dir
+E:/Usuarios/Percival/Documents/Meus jogos/Autorais/Arquivos dos jogos/67Bits/67-Bits-Teste/67BitsTeste/.utmp/RelWithDebInfo/125a6m49/arm64-v8a/FramePacing/CMakeFiles/rebuild_cache.dir

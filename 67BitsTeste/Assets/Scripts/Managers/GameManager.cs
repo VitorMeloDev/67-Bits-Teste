@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
 
     public void Drop()
     {
-        money += (3 * personOnBack);
+        money += (2 * personOnBack);
         personOnBack = 0;
         player.GetComponent<Stacking>().Drop();
     }   

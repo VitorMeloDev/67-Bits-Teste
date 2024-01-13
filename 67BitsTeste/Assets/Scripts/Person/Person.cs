@@ -65,7 +65,7 @@ public class Person : MonoBehaviour
     {
         DisableRagdoll();
         body.transform.position = trigger.transform.position;
-        myCoroutine = StartCoroutine(StartFollowingToLastCubePosition(followed, isFollowStart));
+        myCoroutine = StartCoroutine(StartFollowingToLastPosition(followed, isFollowStart));
     }
 
     public void StopUpdatePersonPosition()
@@ -75,7 +75,7 @@ public class Person : MonoBehaviour
         StopCoroutine(myCoroutine);
     }
 
-    IEnumerator StartFollowingToLastCubePosition(Transform followed, bool isFollowStart)
+    IEnumerator StartFollowingToLastPosition(Transform followed, bool isFollowStart)
     {
         while (isFollowStart)
         {

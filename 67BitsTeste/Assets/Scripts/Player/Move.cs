@@ -42,7 +42,7 @@ public class Move : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) 
     {
-        if(other.gameObject.CompareTag("DropArea"))
+        if(other.gameObject.CompareTag("DropArea") && GameManager.instance.personOnBack > 0)
         {
             GameManager.instance.dropBtn.SetActive(true);
         }
