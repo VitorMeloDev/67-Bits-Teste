@@ -16,11 +16,16 @@ public class Attack : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Person"))
         {
-            if(GameManager.instance.personOnBag < GameManager.instance.limitPersonOnBag)
+            if(GameManager.instance.personOnBack < GameManager.instance.limitPersonOnBack)
             {
+                if(other.gameObject.GetComponent<Person>().droped){return;}
+                
+                components.stacking.list.Add(other.gameObject);
+                StartCoroutine(components.stacking.OnTheBack(other.gameObject));
+
                 components.anim.Play("Cross Punch");
-                GameManager.instance.personOnBag += 1;
                 other.GetComponent<Person>().Hit(transform);
+                GameManager.instance.personOnBack += 1;
             }
         }
     }

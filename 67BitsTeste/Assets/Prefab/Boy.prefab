@@ -454,7 +454,7 @@ Transform:
   m_GameObject: {fileID: 3110735877345641822}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.262, z: 10.58}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -505,7 +505,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 3, y: 2.701332, z: 2}
+  m_Size: {x: 2, y: 1, z: 2}
   m_Center: {x: -0.01772219, y: 1.3232582, z: 0.0059073865}
 --- !u!114 &4224988631747418706
 MonoBehaviour:
@@ -519,10 +519,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb66e622fa2d08342a7b3bd9625f7de0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  body: {fileID: 5316802357246120351}
   trigger: {fileID: 1398738938017421958}
   forceRB: {fileID: 1398738938737862138}
   forceMagnitude: 10000
   anim: {fileID: 8357229371836226103}
+  followSpeed: 3
+  droped: 0
 --- !u!1 &3218866171283947574
 GameObject:
   m_ObjectHideFlags: 0
@@ -1632,7 +1635,7 @@ GameObject:
   - component: {fileID: 7352837156059961862}
   m_Layer: 0
   m_Name: Character_Boy
-  m_TagString: Untagged
+  m_TagString: Person
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
